@@ -54,11 +54,15 @@ npm install
 ```bash  
 ionic serve    
 ```
-Esto levantará la aplicación en http://localhost:4200.
+o
+
+```bash  
+yarn start
+```
 
 --- 
 
-## Instalación y Configuración
+## Compilación para Dispositivos
 ### Android
 #### 1. Configura un entorno de desarrollo Android con Android Studio.
 
@@ -87,18 +91,22 @@ La aplicación tiene varias rutas que permiten a los usuarios navegar entre las 
 ### **2. Página de Lista de Tareas**
 - **Ruta:** `/tasks`
 - **Descripción:** Muestra todas las tareas existentes. Permite editar, eliminar y filtrar las tareas por categoría.
+![alt text](image-4.png)
 
 ### **3. Crear Nueva Tarea**
 - **Ruta:** `/tasks/new`
 - **Descripción:** Página donde los usuarios pueden crear una nueva tarea. Aquí se asigna un título, descripción y categoría a la tarea.
+![alt text](image-3.png)
 
 ### **5. Página de Lista de Categorías**
 - **Ruta:** `/categories`
 - **Descripción:** Muestra todas las categorías existentes. Desde aquí, los usuarios pueden gestionar las categorías, como crear, editar y eliminar.
+![alt text](image-2.png)
 
 ### **6. Crear Nueva Categoría**
 - **Ruta:** `/categories/new`
 - **Descripción:** Página donde los usuarios pueden crear una nueva categoría. Se proporciona un formulario para agregar el nombre de la categoría.
+![alt text](image-1.png)
 
 
 ---
@@ -120,4 +128,4 @@ Carga Dinámica de Componentes: Solo se carga las partes necesarias, reduciendo 
 - Buenas Prácticas de Angular: Se uso NgModules para organizar el código y mantener un diseño escalable.
 - Documentación y Comentarios: Cada servicio y componente tiene comentarios claros que explican su propósito. Además se probó cada funcionalidad para garantizar su correcto funcionamiento.
 
-
+![alt text](image.png)
