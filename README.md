@@ -128,4 +128,3 @@ Carga Dinámica de Componentes: Solo se carga las partes necesarias, reduciendo 
 - Buenas Prácticas de Angular: Se uso NgModules para organizar el código y mantener un diseño escalable.
 - Documentación y Comentarios: Cada servicio y componente tiene comentarios claros que explican su propósito. Además se probó cada funcionalidad para garantizar su correcto funcionamiento.
 
-![alt text](image.png)
