@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ isEdit ? 'Editar Tarea' : 'Nueva Tarea' }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item>
+      <ion-label position="floating">Título</ion-label>
+      <ion-input [(ngModel)]="task.title" name="title"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Descripción</ion-label>
+      <ion-textarea [(ngModel)]="task.description" name="description"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label>Categoría</ion-label>
+      <ion-select [(ngModel)]="task.categoryId" name="categoryId">
+        <ion-select-option *ngFor="let category of categories$ | async" [value]="category.id">
+          {{ category.name }}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-button expand="block" (click)="saveTask()">
+      {{ isEdit ? 'Actualizar' : 'Guardar' }}
+    </ion-button>
+  </form>
+</ion-content>
+
+
+

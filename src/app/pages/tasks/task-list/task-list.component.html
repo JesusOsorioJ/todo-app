@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista de Tareas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Filtro de Categorías -->
+  <ion-item>
+    <ion-label>Filtrar por Categoría</ion-label>
+    <ion-select [(ngModel)]="selectedCategory">
+      <ion-select-option [value]="null">Todas</ion-select-option>
+      <ion-select-option *ngFor="let category of categories$ | async" [value]="category.id">
+        {{ category.name }}
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <!-- Lista de Tareas Filtradas -->
+  <ion-list>
+    <ion-item *ngFor="let task of filteredTasks$ | async">
+      <ion-label>
+        <h2>{{ task.title }}</h2>
+        <p>{{ task.description }}</p>
+      </ion-label>
+      <ion-button fill="clear" color="primary" [routerLink]="['/tasks', task.id]">
+        Editar
+      </ion-button>
+      <ion-button fill="clear" color="danger" (click)="deleteTask(task.id)">
+        Eliminar
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="block" routerLink="/tasks/new">Nueva Tarea</ion-button>
+  <ion-button expand="block" routerLink="/categories/new">Nueva Categoría</ion-button>
+</ion-content>
