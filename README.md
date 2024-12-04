@@ -112,12 +112,12 @@ La aplicación tiene varias rutas que permiten a los usuarios navegar entre las 
 - Actualización Dinámica: Sincronizar las tareas con las categorías de forma reactiva requirió diseñar correctamente los flujos de datos con RxJS.
 
 #### 2. ¿Qué técnicas de optimización de rendimiento aplicaste y por qué?
-- Uso de BehaviorSubject: Para manejar los estados de tareas y categorías, utilizamos BehaviorSubject, asegurando actualizaciones eficientes sin recalcular innecesariamente.
+- Uso de BehaviorSubject: Para manejar los estados de tareas y categorías, se utilizo BehaviorSubject, asegurando actualizaciones eficientes sin recalcular innecesariamente.
 - Pipes de RxJS: Se uso combineLatest y map para filtrar tareas dinámicamente sin afectar el rendimiento.
-Carga Dinámica de Componentes: Solo cargamos las partes necesarias, reduciendo el tiempo de renderizado en dispositivos móviles.
+Carga Dinámica de Componentes: Solo se carga las partes necesarias, reduciendo el tiempo de renderizado en dispositivos móviles.
 #### 3. ¿Cómo aseguraste la calidad y mantenibilidad del código?
-- Modularidad: Dividimos las funcionalidades en componentes y servicios independientes.
-- Buenas Prácticas de Angular: Usamos NgModules para organizar el código y mantener un diseño escalable.
-- Documentación y Comentarios: Cada servicio y componente tiene comentarios claros que explican su propósito.Ademas se provo cada funcionalidad para garantizar su correcto funcionamiento.
+- Modularidad: Se dividio las funcionalidades en componentes y servicios independientes.
+- Buenas Prácticas de Angular: Se uso NgModules para organizar el código y mantener un diseño escalable.
+- Documentación y Comentarios: Cada servicio y componente tiene comentarios claros que explican su propósito. Además se probó cada funcionalidad para garantizar su correcto funcionamiento.
 
 
