@@ -4,7 +4,7 @@
 Este proyecto es una aplicación de lista de tareas (To-Do List) construida con **Ionic** y **Angular**. Permite a los usuarios:  
 
 1. **Gestionar Tareas:**   
-   - Crear, editar y eliminar tareas.  
+   - Crear, editar y eliminar tareas.   
    - Asignar categorías a cada tarea.   
    - Filtrar tareas por categoría. 
        
