@@ -13,7 +13,7 @@ Este proyecto es una aplicación de lista de tareas (To-Do List) construida con 
        
 3. **Experiencia de Usuario Mejorada:**   
    - Interfaz sencilla y amigable.     
-   - Compatible con plataformas móviles (Android e iOS).  
+   - Compatible con plataformas móviles (Android e iOS).   
 
 ---
 
