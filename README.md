@@ -11,7 +11,7 @@ Este proyecto es una aplicación de lista de tareas (To-Do List) construida con 
 2. **Gestionar Categorías:**         
    - Crear, editar y eliminar categorías.   
          
-3. **Experiencia de Usuario Mejorada:**   
+3. **Experiencia de Usuario Mejorada:**    
    - Interfaz sencilla y amigable.     
    - Compatible con plataformas móviles (Android e iOS).   
  
